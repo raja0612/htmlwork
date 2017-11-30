@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>Image slider with AngularJs</title>
   <meta charset="utf-8">
   <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'>
-
   <link rel="stylesheet" href="css/style.css">
-
-
 </head>
-
 <body>
-  <div ng-app="app">
-    <div ng-controller="SlideCtrl" id="slides_control" class="center">
+  <div ng-app="app" class="center">
+    <div ng-controller="SlideCtrl" id="slides_control" >
       <div>
         <carousel interval="myInterval">
           <slide ng-repeat="slide in slides" active="slide.active">
@@ -29,8 +24,6 @@
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
-
-
   <script src="js/index.js"></script>
 
 </body>
