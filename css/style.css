@@ -12,3 +12,7 @@ img{
   top:20px;
  margin-left:-200px;
 }
+
+body {
+  background-image: url("bg.png");
+}
