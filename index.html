@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Image slider with AngularJs</title>
   <meta charset="utf-8">
-  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  <div ng-app="app" class="center">
-    <div ng-controller="SlideCtrl" id="slides_control" >
-      <div>
-        <carousel interval="myInterval">
+  <div ng-app="app">
+    <div ng-controller="SlideCtrl">
+      <div class="row">
+
+        <div class="col-sm-offset-11">
+          <button type="button" class="btn btn-link custom-btn">SKIP</button>
+        </div>
+
+        <carousel class="col-sm-12">
           <slide ng-repeat="slide in slides" active="slide.active">
             <img ng-src="{{slide.image}}">
-            <div class="carousel-caption">
-              <h4>Slide {{$index+1}}</h4>
-            </div>
           </slide>
         </carousel>
+        <div class="col-sm-offset-11">
+          <button type="button" class="btn btn-link custom-btn">NEXT</button>
+        </div>
       </div>
     </div>
   </div>

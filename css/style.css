@@ -1,23 +1,20 @@
 
 img {
-  margin:auto;
-  width: 400px;
-}
-#slides_control {
-  position:absolute;
-  width: 400px;
-  left:50%;
-  top:20px;
-  margin-left:-200px;
-}
-.center {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -100px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-body {
-  background-image: url("bg.png");
+.right.carousel-control, .left.carousel-control {
+  opacity: 0;
+  filter:alpha(opacity=0);
+}
+
+.custom-btn {
+  font-family: "Arial, Helvetica, sans-serif";
+  font-style: normal;
+  font-size: 25px ! important; 
 }
